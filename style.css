@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    font-size: 50%;
+}
+
+body {
+    font-family: 'Karla', sans-serif; 
+    font-weight: 400;
+    line-height: 1;
+}
+
+:root {
+    --color-black: #2D2641;
+    --color-gray: #837D88;
+    --color-purple: #2D2641;
+    --color-blue: #96A9C6;
+    --color-white: #fff;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    /* padding: 0 16.5rem; */
+}
+
+.grid {
+    display: grid;
+    column-gap: 1.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.u-color-white {
+    color: var(--color-white) !important;
+}
+
+.u-margin-bottom {
+    margin-bottom: 4.5rem !important;
+}
+
+/* font-family: 'DM Serif Display', serif; 
+    400 */
+/* font-family: 'Karla', sans-serif; 
+    400 & 700 */
+
+/* ************* */
+/* SECTION-HERO */
+/* ************* */
+
+.section-hero {
+    padding: 9.6rem 0 14rem 0;
+    background-color: var(--color-purple);
+}
+
+.heading-primary {
+    font-size: 7.2rem;
+    letter-spacing: .4rem;
+    font-family: 'DM Serif Display', serif; 
+    letter-spacing: -0.1rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.heading-primary {
+    margin-bottom: 3rem;
+}
+
+.first-word {
+    display: block;
+}
+
+
+
+.heading-primary::before {
+    content: "";
+    display: block;
+    width: 15rem;
+    height: .1rem;
+    border-bottom: .1rem solid var(--color-white);
+    margin-bottom: 5rem;
+}
+
+.body-text {
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+    line-height: 1.9;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 1.6rem;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    letter-spacing: .2rem;
+    border: .2rem solid;
+}
+
+.btn--dark:link,
+.btn--dark:visited {
+    color: var(--color-white);
+    border-color: currentColor;
+}
+
+.hero__image-box {
+    position: relative;
+}
+
+.hero__image {
+    position: absolute;
+    width: 100%;
+}
