@@ -113,8 +113,8 @@ body {
 
 .section-hero::after {
     content: url(images/bg-pattern-intro-right-desktop.svg);
-    position: fixed; 
-    top: 0;
+    position: absolute; 
+    top: -10rem;
     right: 0;
     width: 62rem;
 }
